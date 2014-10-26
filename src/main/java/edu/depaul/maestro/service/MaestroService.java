@@ -1,7 +1,7 @@
 /**
  * 
  */
-package edu.depaul.service;
+package edu.depaul.maestro.service;
 
 /**
  * Used to interact with the operations db.

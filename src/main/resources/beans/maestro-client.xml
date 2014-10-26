@@ -6,7 +6,7 @@
 
     <bean id="maestroService" class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean">
         <property name="serviceUrl" value="http://localhost:8080/maestro-service/MaestroService"/>
-        <property name="serviceInterface" value="edu.depaul.service.MaestroService"/>
+        <property name="serviceInterface" value="edu.depaul.maestro.service.MaestroService"/>
     </bean>
 
 </beans>
