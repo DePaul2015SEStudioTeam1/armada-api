@@ -4,8 +4,9 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
 	                    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    <bean id="maestroClientPropertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="location" value="file:///etc/armada/maestro-api.properties"/>
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
     </bean>
 
     <bean id="remoteMaestroService" class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean">
