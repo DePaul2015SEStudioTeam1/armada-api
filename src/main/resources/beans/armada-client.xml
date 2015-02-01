@@ -9,7 +9,7 @@
         <property name="ignoreUnresolvablePlaceholders" value="true"/>
     </bean>
 
-    <bean id="remoteMaestroService" class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean">
+    <bean id="remoteArmadaService" class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean">
         <property name="serviceUrl" value="${armada.service.url}/ArmadaService"/>
         <property name="serviceInterface" value="edu.depaul.armada.service.ArmadaService"/>
     </bean>
