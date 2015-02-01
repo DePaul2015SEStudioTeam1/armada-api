@@ -5,13 +5,13 @@
 	                    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
     <bean id="maestroClientPropertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="location" value="file:///etc/armada/maestro-api.properties"/>
+        <property name="location" value="file:///etc/armada/armada-api.properties"/>
         <property name="ignoreUnresolvablePlaceholders" value="true"/>
     </bean>
 
     <bean id="remoteMaestroService" class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean">
-        <property name="serviceUrl" value="${maestro.service.url}/MaestroService"/>
-        <property name="serviceInterface" value="edu.depaul.maestro.service.MaestroService"/>
+        <property name="serviceUrl" value="${armada.service.url}/ArmadaService"/>
+        <property name="serviceInterface" value="edu.depaul.armada.service.ArmadaService"/>
     </bean>
 
 </beans>

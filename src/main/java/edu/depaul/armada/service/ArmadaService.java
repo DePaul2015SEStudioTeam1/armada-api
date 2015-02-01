@@ -1,14 +1,14 @@
 /**
  * 
  */
-package edu.depaul.maestro.service;
+package edu.depaul.armada.service;
 
 /**
- * Used to interact with the operations db.
+ * Used to interact with the armada "hub"
  * 
  * @author Paul A. Trzyna
  */
-public interface MaestroService<Container> {
+public interface ArmadaService<Container> {
 
 	/**
 	 * Inserts a new Container instance or updates the existing one

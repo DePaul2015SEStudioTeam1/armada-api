@@ -1,4 +1,4 @@
-operations-api
+armada-api
 ==============
 
-API for the service responsible for interacting with the operations db.
+API used to interact with the Armada hub.
