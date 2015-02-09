@@ -5,6 +5,7 @@ package edu.depaul.armada.service;
 
 import java.util.List;
 
+import edu.depaul.armada.model.Container;
 import edu.depaul.armada.model.ContainerLog;
 
 /**
@@ -12,7 +13,7 @@ import edu.depaul.armada.model.ContainerLog;
  * 
  * @author Paul A. Trzyna
  */
-public interface ArmadaService<Container> {
+public interface ArmadaService {
 
 	/**
 	 * Inserts a new Container instance or updates the existing one
