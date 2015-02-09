@@ -3,6 +3,8 @@
  */
 package edu.depaul.armada.service;
 
+import java.util.List;
+
 import edu.depaul.armada.model.ContainerLog;
 
 /**
@@ -26,4 +28,28 @@ public interface ArmadaService<Container> {
 	 * @param ContainerLog instance we want to insert
 	 */
 	void store(ContainerLog containerLog);
+	
+	/**
+	 * All containers with given
+	 * 
+	 * @return list of logs matching container id
+	 */
+	List<ContainerLog> getAll(String containerId);
+	
+	/**
+	 * Used to paginate results
+	 * 
+	 * @param id	id of last first container in the page
+	 * @param count	number of items in the page
+	 * @return list of containers representing a page
+	 */
+	List<Container> get(long id, int count);
+	
+	/**
+	 * Gets all containers in the database
+	 * 
+	 * @return list of containers in the db
+	 */
+	List<Container> getAll();
+	
 }
