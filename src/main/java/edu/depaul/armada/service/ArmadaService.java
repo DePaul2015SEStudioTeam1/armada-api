@@ -5,8 +5,7 @@ package edu.depaul.armada.service;
 
 import java.util.List;
 
-import edu.depaul.armada.model.Container;
-import edu.depaul.armada.model.ContainerLog;
+import edu.depaul.armada.model.AgentContainer;
 
 /**
  * Used to interact with the armada "hub"
@@ -16,41 +15,16 @@ import edu.depaul.armada.model.ContainerLog;
 public interface ArmadaService {
 
 	/**
-	 * Inserts a new Container instance or updates the existing one
-	 * if it already exists.
+	 * Sends a new AgentContainer instance to armada
 	 * 
-	 * @param container	container we want to save/update
+	 * @param container	container we want to send
 	 */
-	void store(Container container);
-	
+	void send(AgentContainer container);
+
 	/**
-	 * Inserts a new ContainerLog instance
+	 * Sends a list of new AgentContainers to armada
 	 * 
-	 * @param ContainerLog instance we want to insert
+	 * @param containers	containers we want to send
 	 */
-	void store(ContainerLog containerLog);
-	
-	/**
-	 * All containers with given
-	 * 
-	 * @return list of logs matching container id
-	 */
-	List<ContainerLog> getAll(String containerId);
-	
-	/**
-	 * Used to paginate results
-	 * 
-	 * @param id	id of last first container in the page
-	 * @param count	number of items in the page
-	 * @return list of containers representing a page
-	 */
-	List<Container> get(long id, int count);
-	
-	/**
-	 * Gets all containers in the database
-	 * 
-	 * @return list of containers in the db
-	 */
-	List<Container> getAll();
-	
+	void send(List<AgentContainer> container);
 }
