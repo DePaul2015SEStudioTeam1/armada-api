@@ -1,22 +1,17 @@
 package edu.depaul.armada.model;
 
-import java.io.Serializable;
+import java.util.List;
 
 /**
- * Model object representing a docker container
+ * @author ptrzyna, john davidson, jplante
  *
  */
-public class Container implements Serializable {
-	
-	private static final long serialVersionUID = 1L;
-
+public class Container {
 	private long id;
 	private String name;
-	private String containerId;
+	private String containerUniqueId;
 	private String cAdvisorURL;
-	private long memLimit;
-	private long cpuLimit;
-	private long filesystemCapacity;
+	private List<ContainerLog> logs;
 
 	public long getId() {
 		return id;
@@ -34,12 +29,12 @@ public class Container implements Serializable {
 		this.name = name;
 	}
 
-	public String getContainerId() {
-		return containerId;
+	public String getContainerUniqueId() {
+		return containerUniqueId;
 	}
 
-	public void setContainerId(String containerId) {
-		this.containerId = containerId;
+	public void setContainerUniqueId(String containerUniqueId) {
+		this.containerUniqueId = containerUniqueId;
 	}
 
 	public String getcAdvisorURL() {
@@ -50,28 +45,12 @@ public class Container implements Serializable {
 		this.cAdvisorURL = cAdvisorURL;
 	}
 
-	public long getMemLimit() {
-		return memLimit;
+	public List<ContainerLog> getLogs() {
+		return logs;
 	}
 
-	public void setMemLimit(long memLimit) {
-		this.memLimit = memLimit;
-	}
-
-	public long getCpuLimit() {
-		return cpuLimit;
-	}
-
-	public void setCpuLimit(long cpuLimit) {
-		this.cpuLimit = cpuLimit;
-	}
-
-	public long getFilesystemCapacity() {
-		return filesystemCapacity;
-	}
-
-	public void setFilesystemCapacity(long filesystemCapacity) {
-		this.filesystemCapacity = filesystemCapacity;
+	public void setLogs(List<ContainerLog> logs) {
+		this.logs = logs;
 	}
 
 }
