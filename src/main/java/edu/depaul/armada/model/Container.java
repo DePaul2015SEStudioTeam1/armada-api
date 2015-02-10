@@ -1,25 +1,15 @@
 package edu.depaul.armada.model;
 
-import java.util.List;
 
 /**
  * @author ptrzyna, john davidson, jplante
  *
  */
 public class Container {
-	private long id;
+	
 	private String name;
 	private String containerUniqueId;
-	private String cAdvisorURL;
-	private List<ContainerLog> logs;
-
-	public long getId() {
-		return id;
-	}
-
-	public void setId(long id) {
-		this.id = id;
-	}
+	private String CAdvisorURL;
 
 	public String getName() {
 		return name;
@@ -37,20 +27,12 @@ public class Container {
 		this.containerUniqueId = containerUniqueId;
 	}
 
-	public String getcAdvisorURL() {
-		return cAdvisorURL;
+	public String getCAdvisorURL() {
+		return CAdvisorURL;
 	}
 
-	public void setcAdvisorURL(String cAdvisorURL) {
-		this.cAdvisorURL = cAdvisorURL;
-	}
-
-	public List<ContainerLog> getLogs() {
-		return logs;
-	}
-
-	public void setLogs(List<ContainerLog> logs) {
-		this.logs = logs;
+	public void setcAdvisorURL(String CAdvisorURL) {
+		this.CAdvisorURL = CAdvisorURL;
 	}
 
 }

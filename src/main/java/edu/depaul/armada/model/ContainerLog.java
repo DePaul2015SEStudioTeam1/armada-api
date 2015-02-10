@@ -1,14 +1,12 @@
 package edu.depaul.armada.model;
 
-import edu.depaul.armada.model.Container;
 
 /**
  * @author jplante jdavidson
  */
 public class ContainerLog {
 
-	private long id;
-	private Container container;
+	private String containerUniqueId;
 	private String timestamp;
 	private long memUsage;
 	private long totalCpuUsage;
@@ -16,22 +14,6 @@ public class ContainerLog {
 	private long memTotal;
 	private long totalCpu;
 	private long totalFilesystem;
-
-	public long getId() {
-		return id;
-	}
-
-	public void setId(long id) {
-		this.id = id;
-	}
-
-	public Container getContainer() {
-		return container;
-	}
-
-	public void setContainer(Container container) {
-		this.container = container;
-	}
 
 	public String getTimestamp() {
 		return timestamp;
@@ -88,5 +70,12 @@ public class ContainerLog {
 	public void setTotalFilesystem(long totalFilesystem){
 		this.totalFilesystem = totalFilesystem;
 	}
-
+	
+	public void setContainerUniqueId(String containerUniqueId) {
+		this.containerUniqueId = containerUniqueId;
+	}
+	
+	public String getContainerUniqueId() {
+		return containerUniqueId;
+	}
 }
