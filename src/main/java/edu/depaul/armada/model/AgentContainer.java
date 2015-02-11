@@ -23,7 +23,7 @@ public class AgentContainer implements Serializable {
 	public long filesystemUsed;
 	public long filesystemTotal;
 	public long cpuUsed;
-	public long cpu;
+	public long cpuTotal;
 	public Timestamp timestamp;
 
 }
