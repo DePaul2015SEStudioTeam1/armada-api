@@ -16,12 +16,12 @@ public class DashboardContainer implements Serializable {
 
 	public String name;
 	public String containerUniqueId;
-	public String CAdvisorURL;
+	public String cAdvisorURL;
 	public long containerId;
 	public long memUsed;
 	public long memTotal;
-	public long filesystemUsed;
-	public long filesystemTotal;
+	public long diskUsed;
+	public long diskTotal;
 	public long cpuUsed;
 	public long cpuTotal;
 }
