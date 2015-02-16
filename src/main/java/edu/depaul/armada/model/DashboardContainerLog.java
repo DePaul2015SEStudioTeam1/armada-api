@@ -14,8 +14,8 @@ public class DashboardContainerLog implements Serializable {
 	public String timestamp;
 	public long memUsed;
 	public long memTotal;
-	public long filesystemUsed;
-	public long filesystemTotal;
+	public long diskUsed;
+	public long diskTotal;
 	public long cpuUsed;
 	public long cpuTotal;
 
