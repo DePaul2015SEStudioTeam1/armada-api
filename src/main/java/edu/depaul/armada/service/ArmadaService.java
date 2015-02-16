@@ -5,7 +5,7 @@ package edu.depaul.armada.service;
 
 import java.util.List;
 
-import edu.depaul.armada.model.AgentContainer;
+import edu.depaul.armada.model.AgentContainerLog;
 
 /**
  * Used to interact with the armada "hub"
@@ -15,16 +15,16 @@ import edu.depaul.armada.model.AgentContainer;
 public interface ArmadaService {
 
 	/**
-	 * Sends a new AgentContainer instance to armada
+	 * Sends a new AgentContainerLog instance to armada
 	 * 
-	 * @param container	container we want to send
+	 * @param containerLog	containerLog we want to send
 	 */
-	void send(AgentContainer container);
+	void send(AgentContainerLog containerLog);
 
 	/**
-	 * Sends a list of new AgentContainers to armada
+	 * Sends a list of new AgentContainerLogss to armada
 	 * 
-	 * @param containers	containers we want to send
+	 * @param containerLogss	containerLogs we want to send
 	 */
-	void send(List<AgentContainer> container);
+	void send(List<AgentContainerLog> containerLogs);
 }

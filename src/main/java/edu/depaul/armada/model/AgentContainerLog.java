@@ -7,11 +7,11 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
- * AgentContainer used in the UI
+ * AgentContainerLog used for data transfer from the agent to armada
  * 
  * @author ptrzyna
  */
-public class AgentContainer implements Serializable {
+public class AgentContainerLog implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -20,8 +20,8 @@ public class AgentContainer implements Serializable {
 	public String cAdvisorURL;
 	public long memUsed;
 	public long memTotal;
-	public long filesystemUsed;
-	public long filesystemTotal;
+	public long diskUsed;
+	public long diskTotal;
 	public long cpuUsed;
 	public long cpuTotal;
 	public Timestamp timestamp;
