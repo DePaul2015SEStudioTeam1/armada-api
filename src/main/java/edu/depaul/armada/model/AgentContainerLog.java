@@ -22,8 +22,8 @@ public class AgentContainerLog implements Serializable {
 	public long memTotal;
 	public long diskUsed;
 	public long diskTotal;
-	public int cpuUsed;
-	public int cpuTotal;
+	public long cpuUsed;
+	public long cpuTotal;
 	public Timestamp timestamp;
 
 }
