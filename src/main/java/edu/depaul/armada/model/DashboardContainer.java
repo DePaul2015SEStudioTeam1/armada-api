@@ -22,6 +22,6 @@ public class DashboardContainer implements Serializable {
 	public long memTotal;
 	public long diskUsed;
 	public long diskTotal;
-	public long cpuUsed;
-	public long cpuTotal;
+	public int cpuUsed;
+	public int cpuTotal;
 }
