@@ -6,6 +6,7 @@ package edu.depaul.armada.model;
 import java.io.Serializable;
 
 /**
+ * DashboardPreference is used to transfer user preferences from the Dashboard to Armada.
  * @author Roland T Craddolph
  *
  */

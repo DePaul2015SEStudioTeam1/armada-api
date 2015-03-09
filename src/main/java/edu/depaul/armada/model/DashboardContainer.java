@@ -6,7 +6,7 @@ package edu.depaul.armada.model;
 import java.io.Serializable;
 
 /**
- * DashboardContainer used in the UI
+ * DashboardContainer used to transfer data to the dashboard.
  * 
  * @author ptrzyna
  */

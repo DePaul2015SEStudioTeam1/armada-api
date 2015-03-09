@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 
 /**
+ * DashboardContainerLog is used to transfer ContainerLog data to the Dashboard.
  * @author jplante jdavidson
  */
 public class DashboardContainerLog implements Serializable {
