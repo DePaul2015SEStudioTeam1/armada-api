@@ -24,4 +24,5 @@ public class DashboardContainer implements Serializable {
 	public long diskTotal;
 	public long cpuUsed;
 	public long cpuTotal;
+	public String timestamp;
 }
